@@ -1,0 +1,173 @@
+@width: 260px;
+@margin-auto: 0 auto;
+@color-bottom: #75726e;
+@color-font: #fff;
+.positon(relative) {
+    position: relative;
+    left: 100px;
+    top: 60px;
+}
+
+.box-shadow () {
+    box-shadow: 3px -1px 3px #4f4d49;
+    -moz-box-shadow: 3px -1px 3px #4f4d49;
+    -webkit-box-shadow: 3px -1px 3px #4f4d49;
+}
+
+.wrap {
+    background: url(../images/bg.jpg);
+    width: 1000px;
+    height: 625px;
+    margin: 50px auto;
+    .container {
+        width: @width;
+        .positon(relative);
+        .head {
+            width: @width - 20;
+            height: 500px;
+            border: 10px solid #000;
+            background: @color-font;
+            .section1 {
+                background: #154850;
+                width: @width - 20;
+                height: 90px;
+                border-bottom: 10px solid #000;
+                h1 {
+                    margin: 0;
+                    text-align: center;
+                    line-height: 90px;
+                    color: @color-font;
+                }
+            }
+            .section2 {
+                .top {
+                    .top_left {
+                        float: left;
+                        p {
+                            display: block;
+                            width: 30px;
+                            height: 20px;
+                            background: #d60000;
+                            font-size: 12px;
+                            color: @color-font;
+                            line-height: 20px;
+                            text-align: center;
+                            margin-bottom: 0;
+                        }
+                        span {
+                            font-size: 10px;
+                        }
+                    }
+                    .top_right {
+                        float: right;
+                        margin-top: 7px;
+                        p {
+                            font-size: 10px;
+                            color: #154850;
+                            margin: 0;
+                        }
+                        span {
+                            font-size: 10px;
+                            color: red;
+                        }
+                    }
+                }
+                .middle {
+                    clear: both;
+                    background: #154850;
+                    width: @width - 35;
+                    height: 100px;
+                    padding-left: 15px;
+                    span {
+                        display: block;
+                        font-size: 10px;
+                        width: 19px;
+                        word-wrap: break-word;
+                        float: left;
+                        padding-top: 10px;
+                        color: @color-font;
+                    }
+                    b {
+                        width: 0;
+                        height: 0;
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                        border-bottom: 8px solid red;
+                        position: absolute;
+                        top: 242px;
+                        left: 118px;
+                    }
+                    strong {
+                        width: 0;
+                        height: 0;
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                        border-bottom: 8px solid red;
+                        position: absolute;
+                        top: 422px;
+                        left: 118px;
+                    }
+                }
+                .bottom {
+                    text-align: center;
+                    span {
+                        font-size: 10px;
+                    }
+                    p {
+                        span {
+                            display: block;
+                            width: 150px;
+                            height: 0;
+                            border-bottom: 3px solid red;
+                            position: absolute;
+                            top: 280px;
+                            left: 50px;
+                        }
+                        b {
+                            width: 0;
+                            height: 0;
+                            border-bottom: 10px solid red;
+                            border-right: 20px solid transparent;
+                            position: absolute;
+                            top: 273px;
+                            left: 200px;
+                        }
+                    }
+                }
+                .bottom2 {
+                    text-align: center;
+                    span {
+                        font-size: 10px;
+                    }
+                    p {
+                        span {
+                            display: block;
+                            width: 150px;
+                            height: 0;
+                            border-bottom: 3px solid red;
+                            position: absolute;
+                            top: 460px;
+                            left: 50px;
+                        }
+                        b {
+                            width: 0;
+                            height: 0;
+                            border-bottom: 10px solid red;
+                            border-right: 20px solid transparent;
+                            position: absolute;
+                            top: 453px;
+                            left: 200px;
+                        }
+                    }
+                }
+            }
+        }
+        .foot {
+            width: 200px;
+            height: 40px;
+            background: @color-bottom;
+            margin: @margin-auto;
+            .box-shadow ();
+        }
+    }
+}
